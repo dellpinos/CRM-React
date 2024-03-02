@@ -1,6 +1,7 @@
-import { useNavigate, Form, useActionData } from "react-router-dom";
+import { useNavigate, Form, useActionData, redirect } from "react-router-dom";
 import Formulario from "../components/Formulario";
 import Error from "../components/Error";
+import { agregarCliente } from "../api/clientes";
 
 export async function action({ request }) {
 
@@ -29,7 +30,9 @@ export async function action({ request }) {
     if (Object.keys(errores).length) {
         return errores;
     } else {
-        return null;
+
+        await agregarCliente(datos);
+        return redirect('/');
     }
 
 }
@@ -37,8 +40,8 @@ export async function action({ request }) {
 const NuevoCliente = () => {
 
     const errores = useActionData();
-
     const navigate = useNavigate();
+
     return (
         <>
             <h1 className="font-black text-4xl text-gray-800">Nuevo Cliente</h1>

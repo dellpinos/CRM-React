@@ -1,39 +1,47 @@
 {
-    "clientes" : [
-        {
-            "id": 1,
-            "nombre": "Juan",
-            "telefono": 102013313,
-            "email": "juan@gmail.com",
-            "empresa": "TutorHub"
-        },
-        {
-            "id": 2,
-            "nombre": "Karen",
-            "telefono": 138198313,
-            "email": "karen@gmail.com",
-            "empresa": "TutorHub"
-        },
-        {
-            "id": 3,
-            "nombre": "Josue",
-            "telefono": 31983913,
-            "email": "josue@gmail.com",
-            "empresa": "TutorHub"
-        },
-        {
-            "id": 4,
-            "nombre": "Miguel",
-            "telefono": 319381983,
-            "email": "miguel@gmail.com",
-            "empresa": "TutorHub"
-        },
-        {
-            "id": 5,
-            "nombre": "Pedro",
-            "telefono": 1398198938,
-            "email": "pedro@gmail.com",
-            "empresa": "TutorHub"
-        }
-    ]
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Juan",
+      "telefono": 102013313,
+      "email": "juan@gmail.com",
+      "empresa": "TutorHub"
+    },
+    {
+      "id": "2",
+      "nombre": "Karen",
+      "telefono": 138198313,
+      "email": "karen@gmail.com",
+      "empresa": "TutorHub"
+    },
+    {
+      "id": "3",
+      "nombre": "Josue",
+      "telefono": 31983913,
+      "email": "josue@gmail.com",
+      "empresa": "TutorHub"
+    },
+    {
+      "id": "4",
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@gmail.com",
+      "empresa": "TutorHub"
+    },
+    {
+      "id": "5",
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@gmail.com",
+      "empresa": "TutorHub"
+    },
+    {
+      "id": "119a",
+      "nombre": "Martín dP",
+      "empresa": "La Empresa",
+      "email": "c@c.com",
+      "telefono": "12223323",
+      "notas": "Esta es la descripción"
+    }
+  ]
 }

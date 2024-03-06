@@ -1,13 +1,6 @@
 {
   "clientes": [
     {
-      "id": "1",
-      "nombre": "Juan",
-      "telefono": 102013313,
-      "email": "juan@gmail.com",
-      "empresa": "TutorHub"
-    },
-    {
       "id": "2",
       "nombre": "Karen",
       "telefono": 138198313,
@@ -42,6 +35,14 @@
       "email": "c@c.com",
       "telefono": "12223323",
       "notas": "Esta es la descripción"
+    },
+    {
+      "id": "64a8",
+      "nombre": "Pepe Luis",
+      "empresa": "La Empre",
+      "email": "c@c.com",
+      "telefono": "12312",
+      "notas": "Las notas de Pepe Luis, es buen tipo."
     }
   ]
 }

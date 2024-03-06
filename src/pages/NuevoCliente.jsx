@@ -6,21 +6,16 @@ import { agregarCliente } from "../api/clientes";
 export async function action({ request }) {
 
     const formData = await request.formData();
-
     const datos = Object.fromEntries(formData);
-
     const email = formData.get('email');
 
     // Validación
     const errores = [];
-
     const regexEmail = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
 
     if (!regexEmail.test(email)) {
         errores.push('El email no es válido');
     }
-
-
 
     if (Object.values(datos).includes('')) {
         errores.push('Todos los campos son obligatorios');
@@ -34,7 +29,6 @@ export async function action({ request }) {
         await agregarCliente(datos);
         return redirect('/');
     }
-
 }
 
 const NuevoCliente = () => {
@@ -61,8 +55,6 @@ const NuevoCliente = () => {
 
                 <Form
                     method="POST"
-                    noValidate
-
                 >
 
                     <Formulario />
